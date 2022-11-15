@@ -1,21 +1,20 @@
 // We import the Model to communicate with the Database
-const { default: Product } = require('../models/product')
-const prd = require('../models/product')
+const Tweet = require('../models/Tweet')
 
-async function getAllProduct(req,res) {
-    const allprdct = await Product.find()
-    res.json(allprdct)
+async function getAllTweets(req,res) {
+    const allTweets = await Tweet.find()
+    res.json(allTweets)
 }
 
-async function addproduct(req,res) {
+async function createTweet(req,res) {
     console.log('Req Body! ', req.body)
     // Method 3
     // Tweet.create({
     //     name: req.body.name,
     //     content: req.body.content
     // })
-    prd.create(req.body)
-    .then(newproduct => res.json(newproduct))
+    Tweet.create(req.body)
+    .then(newTweet => res.json(newTweet))
     .catch(err => res.json(err))
     
     // Method 2
@@ -31,15 +30,15 @@ async function addproduct(req,res) {
     // await newTweet.save()
 }
 
-async function updateproduct(req, res) {
+async function updateTweet(req, res) {
     try {
     // await Tweet.findOne({ _id: ... })
-    let updatedproduct = await Tweet.findByIdAndUpdate(
+    let updatedTweet = await Tweet.findByIdAndUpdate(
         req.params._id,
         req.body //form body
         // {content: req.body.content}
     )
-        res.status(200).json({message: 'Product updated Successfully!'})
+        res.status(200).json({message: 'Tweet updated Successfully!'})
     // res.json(updatedTweet)
     } catch (err) {
         res.json(err)
@@ -47,21 +46,21 @@ async function updateproduct(req, res) {
 }
 
 
-async function deleteproduct(req,res) {
+async function deleteTweet(req,res) {
     try {
-        await Product.findByIdAndDelete(
+        await Tweet.findByIdAndDelete(
             req.params._id
         )
-        res.json({message: 'Product Deleted Successfully'})
+        res.json({message: 'Tweet Deleted Successfully'})
     } catch (err) {
         res.json(err)
     }
 }
 
 
-async function getproduct(req,res) {
+async function getTweet(req,res) {
     try {
-        const product = await Product.findById(req.params._id)
+        const tweet = await Tweet.findById(req.params._id)
         res.json(tweet)
     } catch (err) {
         res.json(err)
@@ -70,11 +69,11 @@ async function getproduct(req,res) {
 
 // Exporting/Sharing our functions
 module.exports = {
-    getAllProduct,
-    getproduct,
-    addproduct,
-    updateproduct,
-    deleteproduct
+    getAllTweets,
+    getTweet,
+    createTweet,
+    updateTweet,
+    deleteTweet
 }
 
 

@@ -36,3 +36,20 @@
     transform: rotate(360deg);
   }
 }
+*{
+  padding: 0;
+margin: 0 ;
+}
+nav{
+  background-color: lightblue;
+}
+
+
+
+*{
+  padding: 0;
+margin: 0 ;
+}
+nav{
+  background-color: lightblue;
+}

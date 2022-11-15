@@ -2,8 +2,7 @@ const express = require('express')
 const router = express.Router()
 const usersController = require('../controllers/users')
 
-// router.post('/users', usersController.createUser)
-router.post('/auth/signup', usersController.createUser)
+router.post('/users', usersController.createUser)
 
 router.get('/users', usersController.getAllUsers)
 

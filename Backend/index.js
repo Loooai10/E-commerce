@@ -17,8 +17,8 @@ app.use('/', require('./routes/users'))
 app.use('/', require('./routes/products'))
 
 // Listening on a port
-app.listen(4000, () => {
-    console.log('App listening on port 4000!')
+app.listen(2000, () => {
+    console.log('App listening on port 3000!')
 })
 
 
