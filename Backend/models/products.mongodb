@@ -1,0 +1,25 @@
+// MongoDB Playground
+// Use Ctrl+Space inside a snippet or a string literal to trigger completions.
+
+const database = 'Unit_3_Project';
+const collection = 'Product';
+
+// The current database to use.
+use(database);
+
+// Create a new collection.
+//db.createCollection(collection);
+
+db.Product.insertOne(
+  {
+    name: "Money Heist Zig Kinetica II",
+    desc:"Product Description:0Engineered, seamless design mesh upper with strategic support zones0Melded neoprene collar for comfort0Eyelets with secure lace-up closure0Float ride Fuel for an energized cushioning experience0Innovative Zig Energy Bands outsole stretches and snaps back to help return energy with each step0Patterned rubber outsole for traction and grip0Contrast Reebok signature branding",
+    price:"70 USD",
+    img:"https://lh6.googleusercontent.com/YaU4yzzMghaqpIs-qAqAXj-m9ka2XwVWu2di4PTyPFhOMhVvnYFbF6Ahz6eINnM0Y7OXLWvcAbXJ43nPduLGVwVsqrpI-YSkTpbKh_yxykJTxahPBRHnTKd0eYBZushMs8Zyz5Q_LbENybDi7rEGtevkfhdgu-jNfRFhuZ9FaiIFq_e8zwGmvECZTtae1w=s800"
+  }
+)
+// The prototype form to create a collection:
+
+
+// More information on the `createCollection` command can be found at:
+// https://www.mongodb.com/docs/manual/reference/method/db.createCollection/
