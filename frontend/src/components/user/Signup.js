@@ -18,7 +18,7 @@ export default function Signup(props) {
     const regsiterHandler = (e) => {
         e.preventDefault()
         props.register(newUser)
-        navigate('/profile')
+        navigate('/')
     }
 
     return (
