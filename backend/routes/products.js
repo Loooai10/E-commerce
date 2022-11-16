@@ -7,15 +7,14 @@ const productController = require('../controllers/products')
 const isLoggedIn = require("../helper/isLoggedIn");
 
 // We define the routes and controllers
-router.get('/products', productController.getAllProduct)
+router.get('/products', productController.getAllProducts)
+router.get('/products/:_id', productController.getAllProducts)
 
-router.get('/products/:_id', productController.getproduct)
+router.post('/products', productController.addProduct)
 
-router.post('/products', isLoggedIn, productController.addproduct)
+router.put('/products/:_id', productController.updateProduct)
 
-router.put('/products/:_id', productController.updateproduct)
-
-router.delete('/products/:_id', productController.deleteproduct)
+router.delete('/products/:_id', productController.deleteProduct)
 
 
 

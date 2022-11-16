@@ -1,0 +1,13 @@
+#page-header .about-header {
+    background-image: url("/public/hero4.png");
+}
+
+#about-head {
+    display: flex;
+    align-items: center;
+}
+
+#about-head {
+    width: 50%;
+    height: auto;
+}

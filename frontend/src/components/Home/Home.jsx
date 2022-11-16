@@ -26,7 +26,7 @@ export default class App extends Component {
           <p>Summer collection new Modern design</p>
           <div class='pro-container'>
             <div class='pro'>
-              <img src="public/f1.jpg" alt="" />
+              <img src="images/f1.jpg'" alt="" />
               <div class='des'>
                 <span>adidas</span>
                 <h5>Cartoon astronaut T-shirts</h5>

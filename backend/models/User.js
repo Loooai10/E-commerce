@@ -4,14 +4,17 @@ const schema = mongoose.Schema
 
 
 const UserModel = new schema({
-    username: {type: String, required: true},
-    email: {type: String, required: true},
-    password: {type: String, required: true},
+    username: { type: String, required: true },
+    email: { type: String, required: true },
+    password: { type: String, required: true },
     //Associate the tweet model
-    product: [{
+    products: [{
         type: schema.Types.ObjectId,
-        ref: 'Product' 
-        }]
+        ref: 'Product'
+    }],
+    createdAt: {
+        type: Date, default: Date.now
+    },
 }, {
     timestamps: true
 })
@@ -21,6 +24,6 @@ const UserModel = new schema({
 
 const User = mongoose.model('User', UserModel)
 
-module.exports = User
+module.exports = User;
 
 
