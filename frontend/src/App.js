@@ -19,54 +19,54 @@ import Contact from './components/Contact/Contact'
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 
 function App() {
-
+  let token = localStorage.getItem('token')
   const [isAuth, setIsAuth] = useState(false);
   const [user, setUser] = useState({});
 
   useEffect(() => {
     let token = localStorage.getItem("token");
 
-    if(token != null){
+    if (token != null) {
       let user = jwt_decode(token); //storing in user variable because its user object 
 
-      if(user){
+      if (user) {
         setIsAuth(true);
         setUser(user)
       }
-      else if(!user){
+      else if (!user) {
         localStorage.removeItem("token");
         setIsAuth(false);
       }
     }
   }, [])
-  
+
 
   const registerHandler = (user) => {
     axios.post("http://localhost:4000/auth/signup", user)
-    .then(res => {
-      console.log(res);
-    })
-    .catch(err => {
-      console.log(err)
-    });
+      .then(res => {
+        console.log(res);
+      })
+      .catch(err => {
+        console.log(err)
+      });
   }
 
   const loginHandler = (cred) => {
     axios.post("http://localhost:4000/auth/signin", cred)
-    .then(res => {
-      console.log(res.data.token)
+      .then(res => {
+        console.log(res.data.token)
 
-      // Store the token in Local Storage.
-      if(res.data.token != null){
-        localStorage.setItem("token", res.data.token);
-        let user = jwt_decode(res.data.token);
-        setIsAuth(true);
-        setUser(user);
-      }
-    })
-    .catch(err => {
-      console.log(err)
-    })
+        // Store the token in Local Storage.
+        if (res.data.token != null) {
+          localStorage.setItem("token", res.data.token);
+          let user = jwt_decode(res.data.token);
+          setIsAuth(true);
+          setUser(user);
+        }
+      })
+      .catch(err => {
+        console.log(err)
+      })
   }
 
   const onLogoutHandler = (e) => {
@@ -76,39 +76,40 @@ function App() {
     setUser(null);
   }
 
-    return (
-      //Java Logic here
-      <>
-        {/* //html logic here */}
-        <Router>
-          <nav>
-            <Link to="/">Home</Link>&nbsp;
-            <Link to="/About">About</Link>&nbsp;
-            <Link to="/Contact">Contact us</Link>&nbsp;
-            <Link to="/Blog">Blog</Link>&nbsp;
-            <Link to="/Shop">Shop</Link>&nbsp;
-            <Link to="/Cart">Cart</Link>&nbsp;
-            <Link to="/Account">Account</Link>&nbsp;
-            <Link to="/Signup">Sign up</Link>&nbsp;
-            <Link to="/Login">Login</Link>&nbsp;
-          </nav>
-          {/* <Home/> */}
-          <Routes>
+  return (
+    //Java Logic here
+    <>
+      {/* //html logic here */}
+      <Router>
+        <nav>
+          <Link to="/">Home</Link>&nbsp;
+          <Link to="/About">About</Link>&nbsp;
+          <Link to="/Contact">Contact us</Link>&nbsp;
+          <Link to="/Blog">product</Link>&nbsp;
+          <Link to="/Shop">Shop</Link>&nbsp;
+          <Link to="/Cart">Cart</Link>&nbsp;
+          <Link to="/Account">Account</Link>&nbsp;
+          <Link to="/Signup">Sign up</Link>&nbsp;
+          <Link to="/signin">Login</Link>&nbsp;
+        </nav>
+        {/* <Home/> */}
+        <Routes>
           <Route path='/profile' element={<Profile />} />
           <Route path='*' element={<HomePage />} />
           <Route path="/signup" element={<Signup register={registerHandler}></Signup>}></Route>
-          <Route path="/signin" element={isAuth ? <HomePage></HomePage> : <Signin login={loginHandler}></Signin>}></Route>
-            <Route path="/" element={<Home />}></Route>
-            <Route path="/about" element={<About />}></Route>
-            <Route path="/contact" element={<Contact />}></Route>
-            <Route path="/blog" element={<Blog />}></Route>
-            <Route path="/shop" element={<Shop />}></Route>
-            <Route path="/cart" element={<Cart />}></Route>
-            <Route path="/account" element={<Account />}></Route>
-          </Routes>
-        </Router>
-      </>
-    )
-  }
+          {/* <Route path="/signin" element={<Signin ></Signin>} /> */}
+          <Route path="/signin" element={token !== null ? <HomePage></HomePage> : <Signin ></Signin>} />
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/about" element={<About />}></Route>
+          <Route path="/contact" element={<Contact />}></Route>
+          <Route path="/blog/:id" element={<Blog />}></Route>
+          <Route path="/shop" element={<Shop />}></Route>
+          <Route path="/cart" element={<Cart />}></Route>
+          <Route path="/account" element={<Account />}></Route>
+        </Routes>
+      </Router>
+    </>
+  )
+}
 
-  export default App
+export default App

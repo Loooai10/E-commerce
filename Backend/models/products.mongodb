@@ -13,104 +13,138 @@ use(database);
 db.Product.insertMany([
   {
     name: "Money Heist Zig Kinetica II",
-    desc:"Product Description:0Engineered, seamless design mesh upper with strategic support zones0Melded neoprene collar for comfort0Eyelets with secure lace-up closure0Float ride Fuel for an energized cushioning experience0Innovative Zig Energy Bands outsole stretches and snaps back to help return energy with each step0Patterned rubber outsole for traction and grip0Contrast Reebok signature branding",
+    desc:"Engineered, seamless design mesh upper with strategic support zones0Melded neoprene collar for comfort0Eyelets with secure lace-up closure0Float ride Fuel for an energized cushioning experience0Innovative Zig Energy Bands outsole stretches and snaps back to help return energy with each step0Patterned rubber outsole for traction and grip0Contrast Reebok signature branding",
     price:"70$",
+    size:["40","42","44","46","48"],
+      category:"Men",
     img:"https://lh6.googleusercontent.com/YaU4yzzMghaqpIs-qAqAXj-m9ka2XwVWu2di4PTyPFhOMhVvnYFbF6Ahz6eINnM0Y7OXLWvcAbXJ43nPduLGVwVsqrpI-YSkTpbKh_yxykJTxahPBRHnTKd0eYBZushMs8Zyz5Q_LbENybDi7rEGtevkfhdgu-jNfRFhuZ9FaiIFq_e8zwGmvECZTtae1w=s800"
   },
 {
     name: "Downshifter 12",
-    desc:"Product Description:0Perfect sporty and casual pair to complement contemporary athleisure edits.0Stretchy and breathable mesh upper.0Eyelets with secure lace-up closure0Soft foam underfoot provides everyday cushioning0Pull tab on heel top for easy on-off0Patterned rubber outsole for traction and durability0Contrast Nike swoosh branding print",
+    desc:"Perfect sporty and casual pair to complement contemporary athleisure edits.0Stretchy and breathable mesh upper.0Eyelets with secure lace-up closure0Soft foam underfoot provides everyday cushioning0Pull tab on heel top for easy on-off0Patterned rubber outsole for traction and durability0Contrast Nike swoosh branding print",
     price:"34$",
+    size:["40","42","44","46","48"],
+      category:"Men",
     img:"https://lh3.googleusercontent.com/aH4ByaYkQta01QOPREmF7D2LWNlexhkUoAKCFyRF726CJfmSk1J_oekBfe4j3ngvmBaz3rz6tmi_HWajUQZavbxpmBUBAFYuM2Kt5ZtvTrWsd9gHDVbtma4Gl1UPEsW2V2rCHa2bQtQ4Fka4OQHtbNCBipm49ggQmB5Jez2jnP8VDzIg3kDPiU7TPq4Pew=s800"
 },
 {
     name:"Race 21 Shoes",
-    desc:"Product Description:0Influenced by running style, these adidas shoes bring sports vibes to your everyday look.0Durable mesh and leather upper0Eyelets with secure lace-up closure0Cushioned footbed for added comfort0Sculpted Cloudfoam midsole for all day comfort0Patterned outsole for better grip and durability0Contrast adidas signature branding",
+    desc:"Influenced by running style, these adidas shoes bring sports vibes to your everyday look.0Durable mesh and leather upper0Eyelets with secure lace-up closure0Cushioned footbed for added comfort0Sculpted Cloudfoam midsole for all day comfort0Patterned outsole for better grip and durability0Contrast adidas signature branding",
     price:"50$",
+    size:["40","42","44","46","48"],
+      category:"Men",
     img:"https://lh4.googleusercontent.com/0N1ArtnO3bHTR5rwMTUCyXVY7i4RrzewXcfyPx1lMvmCQg5gvSXtwhSkQP8DBuuXjmcQU_f39yOob34asARJKVGYA2O8yrPPlr--mYbmq9kCIFqUTuIO7n5HPdJTqZgC9rpG_zV1uRbK3Xa3bhoU9-iOCJKsjgUR6GEZpFjAshdYPx4Yf_cmLJBMa32H1A=s800"
 },
 {
     name:"Defyallday",
-    desc:"Product Description0Durable and genuine leather upper0Eyelets for secure lacing system0Soft foam cushioning for added comfort0Patterned rubber outsole for durability and traction0Nike swoosh branding detail",
+    desc:"Durable and genuine leather upper0Eyelets for secure lacing system0Soft foam cushioning for added comfort0Patterned rubber outsole for durability and traction0Nike swoosh branding detail",
     price:"45$",
+    size:["40","42","44","46","48"],
+      category:"Men",
     img:"https://lh3.googleusercontent.com/DJ4T_3gY1qjB33betG7bL0LhOL6cQYCDW8c_IIU_0dFwKG-pUh_Yo7h8TacKMcmrtdaPfqyFLBXBxjsaKX-sRvWvnwv1wVC2nPRvpX_OZUmQXPutBDeLzQZOG6kAL9pm-b8kakfRe94pA8Ypk8G36Ytr6tho0Z30pL0IZFsIN3I8hcdn1xnk7kW6nq2hjQ=s800"
 },
 {
     name:"Oakmont Tr",
-    desc:"Product Description0Sporty and minimalistic, these casual sneakers are the perfect pair to complement your streetwear edits.0Lightweight and genuine leather upper0Eyelets with secure lace up closure0FILA Energized® midsole cushioning for added comfort0EVA midsole for added stability0Pull tabs on tongue and heel for easy on-off0Patterned synthetic outsole for better grip0FILA signature branding print",
+    desc:"Sporty and minimalistic, these casual sneakers are the perfect pair to complement your streetwear edits.0Lightweight and genuine leather upper0Eyelets with secure lace up closure0FILA Energized® midsole cushioning for added comfort0EVA midsole for added stability0Pull tabs on tongue and heel for easy on-off0Patterned synthetic outsole for better grip0FILA signature branding print",
     price:"69$",
+    size:["40","42","44","46","48"],
+      category:"Men",
     img:"https://lh4.googleusercontent.com/lRSvSPqH0zne7DoyKVFjal_WaZjnXLBpvAQMBt3W59rXPnbOpmQket7FKoycaWS6XrECvJWK_yNu6riNBBDCraL8j0bh7N_ybMPIDv5X4Zuq6g9Vak4JqsnoTw-NVotnkQEMNq2hv6D4ZLgTLOpYIsE6iI_byXcqZghzaWtzr3E5IDnEdP5y2Q6Jouat9Q=s800"
 },
 {
     name:"Reebok Follow Brand Gl1000",
-    desc:"Product Description0Elevate your shoe aesthetics and bring just the right amount of classic style to your look.0Durable mesh upper with textile overlays0Eyelets for secure lace-up closure0Cushioned footbed for added comfort0Patterned outsole for better grip0Reebok signature branding print",
+    desc:"Elevate your shoe aesthetics and bring just the right amount of classic style to your look.0Durable mesh upper with textile overlays0Eyelets for secure lace-up closure0Cushioned footbed for added comfort0Patterned outsole for better grip0Reebok signature branding print",
     price:"75$",
+    size:["40","42","44","46","48"],
+      category:"Men",
     img:"https://lh4.googleusercontent.com/-B_xsXudNoPQqB7_iGV_xlm9Bon25ptKHhLw7opLPpOcpmr3PNMra_kthx5QSQikc-4b7D3KXhJcvPp_iyHhjqtXppr1Lgwe6rD2CinXp-XNQl6QyTVVVTODvytNUpdj66uAkyfYF8xX24U4k3MZpnVbzxf29eOWM0xewi6VeNBZDtifWgkgeGO4CqPBIQ=s800"
 },
 {
     name:"Retropy E5",
-    desc:"Product Description0Perfect sporty and casual pair to complement contemporary athleisure edits.0Durable leather upper with suede overlays0Eyelets with secure lace-up closure0Soft Ride foam midsole for smooth heel-to-toe transition0Patterned rubber outsole for better grip and durability0Contrast adidas Originals trefoil and signature branding",
+    desc:"Perfect sporty and casual pair to complement contemporary athleisure edits.0Durable leather upper with suede overlays0Eyelets with secure lace-up closure0Soft Ride foam midsole for smooth heel-to-toe transition0Patterned rubber outsole for better grip and durability0Contrast adidas Originals trefoil and signature branding",
     price:"48$",
+    size:["40","42","44","46","48"],
+      category:"Men",
     img:"https://lh6.googleusercontent.com/QonNyf81OwdAs5lDzzccQyIqktMns3gCSkV86JElyAtpuet1nFM_2z84AqCpEN0wAyD0kVeYUMTQq13p7mxKZde-ntboo7qe-Iw5RUVxqF_-cJxddqOpS411m1YIYKEU8mbIiumtSwtJMQwb3xsr590bWCOaw64QVVVQQTS6R63GVZVN2XeVkrS0JKot1A=s800"
 },
 {
     name:"Puma Follow Brand Anzarun Lite men shoes",
-    desc:"Product Description0Breathable mesh upper with synthetic leather overlays0Lace closure with TPU cage at side for lockdown and support0SoftFoam+ sockliner: Cushioned footbed and sockliner provides optimal step-in comfort0IMEVA: Lightweight injected midsole provides superior cushioning and comfort0Rubber outsole for traction and grip0Contrast PUMA signature branding print",
+    desc:"Breathable mesh upper with synthetic leather overlays0Lace closure with TPU cage at side for lockdown and support0SoftFoam+ sockliner: Cushioned footbed and sockliner provides optimal step-in comfort0IMEVA: Lightweight injected midsole provides superior cushioning and comfort0Rubber outsole for traction and grip0Contrast PUMA signature branding print",
     price:"85$",
+    size:["40","42","44","46","48"],
+      category:"Women",
     img:"https://lh6.googleusercontent.com/rs5xcU22fc8maQTMwbiWf8b0W3gOvNTu6-NCFtm-AzJOHVQYFaQA0cXl7Gycez_JUfgauK-0g_ccvmPRdEnFjzipmnVH0Hh0flEHZnvI4VSy8o5XECS9EeByGKpQhIA1P6itji-xzyLaBhaqEpYolM6XuN_A4Mzh6bqIlIdY2Ow_i0-1Mn9aq4RaR4464Q=s800"
 },
 {
     name:"Reebok Money Heist Zig Kinetica II",
-    desc:"Product Description0Engineered, seamless design mesh upper with strategic support zones0Melded neoprene collar for comfort0Eyelets with secure lace-up closure0Float ride Fuel for an energized cushioning experience0Innovative Zig Energy Bands outsole stretches and snaps back to help return energy with each step0Patterned rubber outsole for traction and grip0Contrast Reebok signature branding",
+    desc:"Engineered, seamless design mesh upper with strategic support zones0Melded neoprene collar for comfort0Eyelets with secure lace-up closure0Float ride Fuel for an energized cushioning experience0Innovative Zig Energy Bands outsole stretches and snaps back to help return energy with each step0Patterned rubber outsole for traction and grip0Contrast Reebok signature branding",
     price:"92$",
+    size:["40","42","44","46","48"],
+      category:"Women",
     img:"https://lh3.googleusercontent.com/MAzKLZL0W65eYTGfYBobUESsxIwE4kwIgpR0wFOtvsdFaGKe2muQSLitD4xjs5HYqAvWAe1J-g57P4ms3KNnZxj7WSr1AbVoMNBadjjOJFo7wuezdYADSOsv0vWa-Jw2I3vopoprkMbDhu7j0t9MGOvqzarNUaR0NOqkN478UFK8M3vbWoQvhCGFmdpGsQ=s800"
 },
 {
     name:"Nike Air Huarache Wt",
-    desc:"Product Description0Perfect sporty and casual pair to complement contemporary athleisure edits.0Modified Flyknit upper with energetic stitched-in patterning0Eyelets with secure lace-up closure0Lightweight foam midsole gives responsive cushioning for high-impact training0Strategically placed rubber on the outsole for enhance durability and multi-directional traction0Embroidered Nike swoosh branding",
+    desc:"Perfect sporty and casual pair to complement contemporary athleisure edits.0Modified Flyknit upper with energetic stitched-in patterning0Eyelets with secure lace-up closure0Lightweight foam midsole gives responsive cushioning for high-impact training0Strategically placed rubber on the outsole for enhance durability and multi-directional traction0Embroidered Nike swoosh branding",
     price:"57$",
+    size:["40","42","44","46","48"],
+      category:"Men",
     img:"https://lh4.googleusercontent.com/01pRoqtGFUvLmqMZCKfE7o3D44c0CCXW6br_tX2OQMU9WR04RfmIWZWQHL_j17txkfcoJzmjRwriHUKVOToPIaVWE3ex8f7z2A668nIwuBn2UZkTScYkFJL-bBiBFgV65Cni7Iycs-2z0qyC3ZHxNp2AptK2lS1GJ_g2-JfQCrUaRwZCE4HcnESW0ZKd_A=s800"
 },
 {
     name:"Nike Waffle Debut",
-    desc:"Product Description0Perfect sporty and casual pair to complement contemporary athleisure edits.0Soft suede and textile upper0Wrap around Nike Swoosh pull tab for easy on/off0Secure lace-up closure0Cushioned foot bed for added comfort0Lifted foam midsoles for an elevated look and all-day comfort0Rubber Waffle outsole for better durability and traction0Nike signature branding",
+    desc:"Perfect sporty and casual pair to complement contemporary athleisure edits.0Soft suede and textile upper0Wrap around Nike Swoosh pull tab for easy on/off0Secure lace-up closure0Cushioned foot bed for added comfort0Lifted foam midsoles for an elevated look and all-day comfort0Rubber Waffle outsole for better durability and traction0Nike signature branding",
     price:"66$",
+    size:["40","42","44","46","48"],
+      category:"Women",
     img:"https://lh6.googleusercontent.com/Y3x696c6L8gB2zjC3Kp-BS4vvObbrbUf7zE4GRTD2e-nK1-qkZ4fw3uaFptaJVQ8MwTvbt5NiKaCRTIkSzpcQ7OG7qFFxT1T8YU76HJaFBY7wZexNxQ0wmabPzENVLvSUMNoVFLwywwzl7J2sNPT28eGzvh2Dl9Em0SdK7UmBDsX7JeHkRiDlYkhApRbUw=s800"
 },
 {
     name:"Nike Quest 5",
     desc:"Product Description0You lace up in pursuit of new personal goals. Let the Nike Quest 5 help you reach those0aspirations.0Lightweight and breathable mesh upper0Eyelets with secure lace-up closure0Supersoft padding and cushioning at the collar keeps the ankle comfortable0Supersoft foam midsole helps cushion the foot with every step0Patterned rubber outsole for better grip and traction0Contrast Nike swoosh branding print",
     price:"109$",
+    size:["40","42","44","46","48"],
+      category:"Men",
     img:"https://lh3.googleusercontent.com/IZlV4acWjiSyoOuz4vOSC9MSNxFpry0J8xpugXDpJhqSYJK_ow1SKJVWokfyWNZ_aKn2zhHgcPidD6_Lcnd8T3qwQLoCYRl0DlGXzMmQU3Nrbz4M5B3R8H5w-pz1ibOssVOjQPhNt7LwS9PUNaWT-LWu9p3DsH5szHLF1A42kwlgJgBgSQ9hLMFmaW4Cpw=s800"
 },
 {
     name:"Nike Air Zoom Superrep 3",
-    desc:"Product Description0Power through each rep with a redesigned look that brings support and stability to your ever0move0Lightweight and breathable mesh uppe0Eyelets with secure lace-up closur0Nike Zoom Air heel unit and cushioned midsole for responsive cushionin0Split sole promotes natural movement in all direction0Patterned rubber outsole for traction and durabilit0Nike swoosh branding print",
+    desc:"Power through each rep with a redesigned look that brings support and stability to your ever0move0Lightweight and breathable mesh uppe0Eyelets with secure lace-up closur0Nike Zoom Air heel unit and cushioned midsole for responsive cushionin0Split sole promotes natural movement in all direction0Patterned rubber outsole for traction and durabilit0Nike swoosh branding print",
     price:"35$",
+    size:["40","42","44","46","48"],
+      category:"Women",
     img:"https://lh3.googleusercontent.com/qQT0Onz_t2tSH7NSWAGmWEoSOTc4-tiEtHxX_hir26HWjKZC43sC9h_tEwsyI0bLmQDkFrfUkXnGK2zgrBPFbd7rD6EnIUkNfJo7WrjNdlVXqCTHN0VKd0Zd2YGyIppqMdHHcT93VEkcfLSnFrYafXTZVra1SaXagQV4fMNRAs88Hm46t8DcimszBtFqFw=s800"
 },
 {
     name:"Nike Air Max 97 Wt",
-    desc:"Product Description0Perfect sporty and casual pair to complement contemporary athleisure edits.0Durable textile upper with synthetic overlays0Eyelets with secure lace-up closure0Air Max midsole unit for added comfort0Pull tab on heel and tongue for easy on/off0Patterned rubber outsole for durable tractionEmbroidered Nike swoosh branding",
+    desc:"Perfect sporty and casual pair to complement contemporary athleisure edits.0Durable textile upper with synthetic overlays0Eyelets with secure lace-up closure0Air Max midsole unit for added comfort0Pull tab on heel and tongue for easy on/off0Patterned rubber outsole for durable tractionEmbroidered Nike swoosh branding",
     price:"95$",
+    size:["40","42","44","46","48"],
+      category:"Women",
     img:"https://lh4.googleusercontent.com/NHHyEomTTLNSxDDpuqdgntFIWYHcAp2yggC0I9l2T74I0c2zyq-U9Rk7-upDCRjZlL_4fO55THufPztYWrSPJ_k7dmiR0tY90YOH2c4GttzfEI5_dP6XgoBHzF1C1oxlwFfueZiNEDYdDgAmO0pPXPCiFDy4754e64sACKkW0MCffUgdGhoz2AM1fCnUJA=s800"
 },
 {
     name:"Nike Air Max 270 Ess Style",
-    desc:"Product Description0Perfect sporty and casual pair to complement contemporary athleisure edits.0Breathable mesh upper with synthetic overlays0Eyelets with secure lace-up closure0The Max Air 270 unit delivers unrivalled, all-day comfort0The foam midsole feels soft and comfortableRubber outsole adds traction and durability0Nike signature branding",
+    desc:"Perfect sporty and casual pair to complement contemporary athleisure edits.0Breathable mesh upper with synthetic overlays0Eyelets with secure lace-up closure0The Max Air 270 unit delivers unrivalled, all-day comfort0The foam midsole feels soft and comfortableRubber outsole adds traction and durability0Nike signature branding",
     price:"76$",
+    size:["40","42","44","46","48"],
+      category:"Women",
     img:"https://lh4.googleusercontent.com/2aLdcCe8PoUn7ZseeN6MXEYIaypAKUymIoaiBmn16PG-MFkQG1j6Rie6MdQXeZljgl3YjVonw1gTa7KpCL3yaiMX2pc8-i2mEv1eiGXS4d6v1srKACWK7tbZiLQIlJRGMHcaqg9duWijqZhaQTid1pvarOzitj1wHvyAlCrC-aq8ArRAyHf3kn3aKqe9Mg=s800"
 },
 {
     name:"Nike React Vision Sneakers",
-    desc:"Product Description0Elevate your casual-day outfits with these sneakers.0Micro-detailing, exaggerated proportions and multi-textured upper0Eyelets with secure lace-up closure0Nike React foam midsole with soft rubber detailing0TPU heel clip outsole for traction0Nike swoosh branding detail",
+    desc:"Elevate your casual-day outfits with these sneakers.0Micro-detailing, exaggerated proportions and multi-textured upper0Eyelets with secure lace-up closure0Nike React foam midsole with soft rubber detailing0TPU heel clip outsole for traction0Nike swoosh branding detail",
     price:"72$",
+    size:["40","42","44","46","48"],
+      category:"Women",
     img:"https://lh6.googleusercontent.com/K_5Fb0981zTqiXovqMqk0t177H_t7Ak_MpQ5TLwmA1KVfZLROK70A3BqFcGzfzlPV6dCoL28YNnrx8lqN_J8ck294-YJ8El9u8tjlGxvt2EosBbELJcuUS-AE4McJTUPJyyay-jVDhcg6gt5MCGcho97A93PHFcamZ5UVD79GA6irXI_8h5NhQWIepQ-NQ=s800"
 },
 {
     name:"Nike Waffle Trainer 2 S50",
-    desc:"Product Description0Perfect sporty and casual pair to complement contemporary athleisure edits.0Durable canvas upper with suede overlays0Eyelets with secure lace-up closure0Padded collar and soft inner foam cushioning0Dual-stacked midsole enhances shape and cushioning0Moulded waffle rubber sole is flexible and durable0Nike swoosh branding print",
+    desc:"Perfect sporty and casual pair to complement contemporary athleisure edits.0Durable canvas upper with suede overlays0Eyelets with secure lace-up closure0Padded collar and soft inner foam cushioning0Dual-stacked midsole enhances shape and cushioning0Moulded waffle rubber sole is flexible and durable0Nike swoosh branding print",
     price:"84$",
+    size:["40","42","44","46","48"],
+      category:"Women",
     img:"https://lh3.googleusercontent.com/CCkkIFGIR_HLVdslWvWWCTzYFKG3N3Cv0k0Chd3hJxAdPktlpATdAl-NjYSQrz4E54Mjo6nBN5yda2IUKqalpPheBBA_gN0Q49NdY3KChj1bKsAWAWC8R7_j_bIHFsSZVi1WGef4AQBaXOdk4eGatjmybvywznF0tuu9I352TLhlC3H2z0T853u6OtXCyw=s800"
 }
 // {

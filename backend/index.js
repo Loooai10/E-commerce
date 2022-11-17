@@ -17,6 +17,7 @@ app.use(express.static(path.join(__dirname, 'build')));
 //app.use('/', require('./routes/tweets'))
 app.use('/', require('./routes/users'))
 app.use('/', require('./routes/products'))
+app.use('/', require('./routes/orders'))
 
 //React below
 app.get('/*', function (req, res) {

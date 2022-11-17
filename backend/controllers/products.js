@@ -3,8 +3,19 @@ const Product = require('../models/Product')
 const prd = require('../models/Product')
 
 async function getAllProducts(req, res) {
-    const allProducts = await Product.find()
+    const allProducts = await Product.find(
+    ).limit(6)
+
     res.json(allProducts)
+}
+async function getProductById(req, res) {
+    const allProducts = await Product.findOne({ _id: req.params._id })
+    res.json(allProducts)
+}
+async function addToCart(req, res) {
+    // const allProducts = await Product.findOne({ _id: req.params._id })
+    console.log(req.body)
+    res.json(req.body)
 }
 
 async function addProduct(req, res) {
@@ -65,7 +76,9 @@ module.exports = {
     getAllProducts,
     addProduct,
     updateProduct,
-    deleteProduct
+    deleteProduct,
+    getProductById,
+    addToCart
 }
 
 

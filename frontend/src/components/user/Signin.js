@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Container, Form, Button } from "react-bootstrap";
+import axios from 'axios';
 
 export default function Signin(props) {
 
@@ -13,7 +14,22 @@ export default function Signin(props) {
     }
 
     const loginHandler = () => {
-        props.login(newUser)
+        console.log(newUser)
+        axios.post("http://localhost:4000/auth/signin", newUser)
+            .then(res => {
+                console.log(res)
+
+                // Store the token in Local Storage.
+                if (res.data.token != null) {
+                    localStorage.setItem("token", res.data.token);
+                    // let user = jwt_decode(res.data.token);
+                    // setIsAuth(true);
+                    // setUser(user);
+                }
+            })
+            .catch(err => {
+                console.log(err)
+            })
     }
 
     return (

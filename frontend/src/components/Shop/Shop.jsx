@@ -1,6 +1,7 @@
 import './Shop.css'
 import React, { useEffect, useState } from 'react'
 import axios from 'axios';
+import { Link } from 'react-router-dom'
 
 
 export default function Shop() {
@@ -42,13 +43,13 @@ export default function Shop() {
           {products.length > 0 ? products.map(p => (
             <div className='pro' key={p._id}>
               {/* 1000000 */}
-              <img src="https://lh6.googleusercontent.com/YaU4yzzMghaqpIs-qAqAXj-m9ka2XwVWu2di4PTyPFhOMhVvnYFbF6Ahz6eINnM0Y7OXLWvcAbXJ43nPduLGVwVsqrpI-YSkTpbKh_yxykJTxahPBRHnTKd0eYBZushMs8Zyz5Q_LbENybDi7rEGtevkfhdgu-jNfRFhuZ9FaiIFq_e8zwGmvECZTtae1w=s800" alt="" />
+              <img src={p.img} alt="" />
               <div className='des'>
-                <span>{p.name}</span>
-                let text = "How are you doing today?";
+                <span><b>{p.name}p</b></span>
+                {/* let text = "How are you doing today?";
                 const myArray = text.split(" ");
-                let word = myArray[1];
-                <h5>{p.desc}</h5>
+                let word = myArray[1]; */}
+                <p>{p.desc}</p>
                 <div className='star'>
                   <i className='fas fa-star'></i>
                   <i className='fas fa-star'></i>
@@ -57,7 +58,9 @@ export default function Shop() {
                 </div>
                 <h4>{p.price}</h4>
               </div>
-              <a href="#"><i className='fal fa-shopping-cart cart'></i></a>
+              <Link to={`/blog/${p._id}`}>
+                <i className='fal fa-shopping-cart cart'></i>
+              </Link>
             </div>
           )) : null}
 

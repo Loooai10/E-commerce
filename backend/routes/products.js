@@ -8,9 +8,10 @@ const isLoggedIn = require("../helper/isLoggedIn");
 
 // We define the routes and controllers
 router.get('/products', productController.getAllProducts)
-router.get('/products/:_id', productController.getAllProducts)
+router.get('/products/:_id', productController.getProductById)
 
 router.post('/products', productController.addProduct)
+router.post('/products/addtocart', productController.addToCart)
 
 router.put('/products/:_id', productController.updateProduct)
 
