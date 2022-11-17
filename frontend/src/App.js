@@ -6,7 +6,8 @@ import Signin from './components/user/Signin'
 import axios from 'axios';
 import { useState, useEffect } from 'react';
 import jwt_decode from 'jwt-decode';
-
+import 'react-toastify/dist/ReactToastify.css';
+import { toast } from 'react-toastify';
 import React, { Component } from 'react'
 import Home from './components/Home/Home'
 import HomePage from './components/HomePage/HomePage'
@@ -16,7 +17,7 @@ import Blog from './components/Blog/Blog'
 import Cart from './components/Cart/Cart'
 import Shop from './components/Shop/Shop'
 import Contact from './components/Contact/Contact'
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, Link,useNavigate } from 'react-router-dom'
 
 function App() {
   let token = localStorage.getItem('token')

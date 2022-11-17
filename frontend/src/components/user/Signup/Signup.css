@@ -1,0 +1,46 @@
+/* Signup.css */
+.right-row{
+    /* padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 10px;
+    width: 49%;
+    border-radius: 25px;
+    box-shadow: 10px 10px 10px 15px rgb(219, 219, 219);
+    margin-left: 20px; */
+
+    padding: 20px 30px;
+    width: 19%;
+    border-radius: 25px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    margin: 150px;
+    text-align: center;
+    background-color: black;
+}
+.container{
+    margin-top: 60px;
+    
+}
+
+.form-control{
+    line-height: 2;
+}
+.signup{
+    color: rgb(13, 117, 149);
+}
+
+.submit-button{
+    background-color: rgb(135, 170, 107);
+    border: none;
+    width: 100%;
+}
+.submit-button:disabled{
+    background-color: rgba(144, 172, 122, 0.616);
+}
+
+.submit-button:hover{
+    background-color: rgb(88 111 69);
+}
+
+.form-text{
+    text-align: left;
+}
